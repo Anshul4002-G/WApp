@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:8000";
+const url = "https://wapp-backend-ttkh.onrender.com";
 
 export const addUser = async (data) => {
   try {
@@ -61,3 +61,4 @@ export const UploadFile = async (data) => {
     console.log("errror while uploading the file ", err);
   }
 };
+
