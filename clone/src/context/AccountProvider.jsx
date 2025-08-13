@@ -15,7 +15,7 @@ const AccountProvider = ({ children }) => {
   const socket = useRef();
 
   useEffect(() => {
-    socket.current = io("ws://localhost:9000");
+    socket.current = io("https://wapp-socket.onrender.com");
   }, []);
 
   return (
@@ -42,3 +42,4 @@ const AccountProvider = ({ children }) => {
 };
 
 export default AccountProvider;
+
